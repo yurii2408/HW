@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            flex-wrap: wrap ;
+        }
+        .item{
+            width:200px;
+            height:200px;
+            background: #3F5EFB;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 65%);
+            border-radius: 15px;
+            border: 3px solid #3F5EFB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+        .item:hover{
+            border: 1px solid #3F5EFB;
+            border-radius: 100px;
+            transition:1s;
+           transform: scale(1);
+        }
+        .item:hover a{
+            background:green;
+            color:aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item">
+        <a href="#">link </a>
+    </div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+</body>
+</html>
