@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+            font-family: Arial, sans-serif;
+        }
+        section p{
+            width: 70%;
+        }
+        .top-section{
+            background-color: rosybrown;
+        }
+        .bottom-section{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<section class="top-section">
+    <h1>Lorem ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsa iusto maxime molestiae veritatis. Ab alias aliquam aliquid animi aperiam architecto, aspernatur aut commodi cumque dignissimos ea enim esse excepturi exercitationem expedita facere fugit illo ipsam iusto minus molestias nisi, nulla officia officiis perferendis porro quam qui sunt tenetur vel.</p>
+</section>
+<section class="bottom-section">
+    <h1>Lorem ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsa iusto maxime molestiae veritatis. Ab alias aliquam aliquid animi aperiam architecto, aspernatur aut commodi cumque dignissimos ea enim esse excepturi exercitationem expedita facere fugit illo ipsam iusto minus molestias nisi, nulla officia officiis perferendis porro quam qui sunt tenetur vel.</p>
+</section>
+</body>
+</html>
+
+<!--[00:00:00] Потрібно створити дві однакові за структурою, але контрастні за стилем секції (наприклад, з різними кольорами тексту та фону), без урахування скролу.-->
+<!--[00:00:13] Створюються верхня (`top-section`) і нижня (`bottom-section`) секції, кожна містить заголовок та параграф із текстом.-->
+<!--[00:00:47] Для стилізації можна використати окремий CSS-файл або внутрішні стилі.-->
+<!--[00:01:00] Спочатку скидаються стандартні `margin` і `padding` для всіх елементів.-->
+<!--[00:01:14] Обом секціям задається висота `50vh`, щоб разом вони займали весь екран.-->
+<!--[00:01:29] Спільні стилі секцій винесено окремо, а індивідуальні властивості задаються для `top-section` і `bottom-section`.-->
+<!--[00:01:43] Контент усередині секцій центрується; для цього можна використовувати `text-align: center` або Flexbox із `flex-direction: column`.-->
+<!--[00:02:11] Текст додатково вирівнюється по центру через `text-align: center`.-->
+<!--[00:02:24] Ширина текстового контенту обмежується приблизно до 70% для кращої читабельності.-->
+<!--[00:02:37] Відстань між заголовком і текстом додається через `margin` або `gap`.-->
+<!--[00:02:51] Верхній секції задається рожевий фон, нижній — чорний.-->
+<!--[00:03:06] Для контрасту в нижній секції встановлюється білий колір тексту.-->
+<!--[00:03:19] Для більшої схожості із зразком змінюється шрифт, наприклад на Arial.-->

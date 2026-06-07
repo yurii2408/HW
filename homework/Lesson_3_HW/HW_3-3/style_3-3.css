@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior:  smooth;
+}
+a{
+    font-size: 52px;
+    text-decoration: none;
+    color: black;
+}
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+}
+section p{
+    width: 70%;
+}
+#top-section{
+    background-color: rosybrown;
+}
+#bottom-section{
+    background-color: cadetblue;
+}
+#middle-section{
+    background-color:  brown;
+}
