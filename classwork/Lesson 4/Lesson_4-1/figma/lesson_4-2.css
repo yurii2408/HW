@@ -1,0 +1,13 @@
+
+
+*{
+box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.rectangle{
+    border: 5px solid #b33434;
+    width: 100%;
+    height: 110px;
+    /*margin:500px auto 0 auto;*/
+}
