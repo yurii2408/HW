@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .card{
+            width: 200px;
+            height: 200px;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+            order: 0;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .orange{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div class="card blue"></div>
+    <div class="card green"></div>
+    <div class="card yellow"></div>
+    <div class="card pink"></div>
+    <div class="card orange"></div>
+</div>
+</body>
+</html>
+
+
+
+
+[00:01:15] У Flexbox існує властивість order, яка дозволяє змінювати порядок елементів без редагування HTML-структури.
+[00:02:23] За замовчуванням усі flex-елементи мають значення order: 0, тому відображаються в порядку, в якому записані в HTML.
+[00:02:51] Якщо елементу задати від’ємне значення order (наприклад, -1), він переміститься перед елементами з order: 0.
+[00:03:46] Якщо елементу задати додатне значення order (наприклад, 1), він переміститься після елементів із меншим значенням order.
+[00:04:13] Можна задавати будь-які значення order (-2, -1, 0, 1, 2 тощо), щоб повністю контролювати послідовність відображення елементів.
+[00:04:40] Використання order зручне тим, що дозволяє змінювати порядок елементів лише через CSS, не змінюючи HTML-код.
+[00:04:53] Властивість order працює для будь-яких елементів усередині flex-контейнера: блоків, зображень, тексту, відео та інших компонентів.
