@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM</title>
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        sup{
+            color: red;
+        }
+        input{
+            width: 150px;
+        }
+        .form-registration {
+        border: 5px solid red;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        input[type=text] {
+background-color: white;
+            border: 5px solid red;
+            border-radius: 10px;
+        }
+        input[type="text"]::placeholder {
+            color: green;
+        }
+        input[type="text"]:focus {
+            outline: 5px solid green;
+        }
+    </style>
+</head>
+<body>
+
+<form class="form-registration">
+
+    <label for="name" >Name</label>
+    <input type="text" name="firstname" id="name" placeholder="Anna" required><sup>*</sup>
+
+    <label for="email" >Email</label>
+    <input type="email" name="email" id="email" placeholder="email@googl.com" required><sup>*</sup>
+
+    <label for="password" >Email</label>
+    <input type="number" name="password" id="password" placeholder="qwerty" required><sup>*</sup>
+
+    <label for="age" >age</label>
+    <input type="number" name="age" id="age" min="18" max="100" placeholder="18" required  ><sup>*</sup>
+
+    <label>стать</label>
+    <label> <input type="radio" name="gender" value="male">чоловік</label>
+    <label> <input type="radio" name="gender" value="female">жінка</label>
+
+    <label>
+        <input type="checkbox" name="newsletter">Підписатись на новини
+    </label>
+
+    <label for="lorem">Країна</label>
+    <select id="lorem">
+        <option value="">вибір</option>
+        <option value="">canada</option>
+        <option value="">uk</option>
+        <option value="">norway</option>
+        <option value="">poland</option>
+    </select>
+
+    <label for="phone"></label>
+    <select id="phone">
+        <optgroup label="apple">
+            <option value="">iphone1</option>
+            <option value="">iphone2</option>
+            <option value="">iphone3</option>
+        </optgroup>
+        <optgroup label="samsung">
+            <option value="">samsung 1</option>
+            <option value="">samsung 2</option>
+            <option value="">samsung 3</option>
+        </optgroup>
+    </select>
+
+    <label for="coment"></label>
+    <textarea name="" id="coment" cols="5" rows="10"></textarea>
+
+    <div>
+        <input type="submit" value="send">
+        <input type="reset" value="скинути">
+
+
+    </div>
+
+</form>
+
+</body>
+</html>
+
+[00:00:00] Форму можна стилізувати через селектор тега, клас або ідентифікатор, використовуючи властивості на кшталт border, border-radius та padding.
+[00:00:42] Стилізація через селектор input впливає на всі типи полів введення, включно з радіокнопками та чекбоксами.
+[00:00:56] Для стилізації лише текстових полів використовується селектор input[type="text"].
+[00:01:11] Для текстових полів можна змінювати фон, рамку, заокруглення кутів, колір тексту та шрифт.
+[00:01:52] Текст-заповнювач (placeholder) не успадковує стилі звичайного тексту поля й потребує окремої стилізації.
+[00:02:06] Для зміни вигляду placeholder використовується псевдоелемент ::placeholder, де можна задавати колір, шрифт та інші текстові стилі.
+[00:02:34] Після введення користувачем тексту відображаються стилі, задані для самого поля вводу, а не для placeholder.
+[00:02:47] Стан фокусування поля стилізується через псевдоклас :focus, наприклад input[type="text"]\:focus.
+[00:03:00] Синя рамка при фокусуванні — це не border, а outline, тобто зовнішня межа поверх основної рамки.
+[00:03:40] Властивість outline налаштовується аналогічно до border: можна задавати товщину, стиль та колір для індикатора фокусу.

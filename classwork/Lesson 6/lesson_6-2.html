@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+            h1~p{
+                color: #b33434;
+            }
+            div>p>span{
+                color: #b33434;
+            }
+            div div p{
+                color: #D1EF53;
+            }
+    </style>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<div>
+    <p>Lorem <span>ipsum</span> dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+
+    </div>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+</div>
+
+</body>
+</html>
+
+[00:00:38] Сусідній селектор + дозволяє стилізувати лише елемент, який іде одразу після іншого елемента (наприклад, перший p після h1)
+[00:00:52] Споріднений селектор ~ застосовує стилі до всіх відповідних елементів, що розташовані після вказаного елемента на тому ж рівні.
+[00:01:34] Просторовий (descendant) селектор через пробіл дозволяє стилізувати елементи, які знаходяться всередині іншого елемента, незалежно від рівня вкладеності.
+[00:02:14] Просторові селектори можна комбінувати для точного звернення до вкладених елементів, наприклад до span всередині p.
+[00:02:41] Якщо структура дозволяє, можна спростити селектор і звертатися безпосередньо до всіх потрібних вкладених елементів (наприклад, усіх span у div).
+[00:02:54] Дочірній селектор > відрізняється від просторового тим, що працює лише з прямими нащадками елемента.
+[00:03:09] Якщо між батьківським і цільовим елементом є проміжний рівень вкладеності, селектор > не спрацює.
+[00:03:37] Для роботи дочірнього селектора потрібно повністю вказати шлях через усіх прямих нащадків (наприклад, div > p > span).
+[00:03:51] Дочірні селектори допомагають дуже точно знаходити конкретні елементи та можуть частково замінювати використання класів.
+[00:04:06] У DevTools можна переглянути повний шлях до елемента, що допомагає правильно будувати складні селектори.
+[00:05:00] У складних структурах уточнення шляху через вкладені елементи (div div p) дозволяє стилізувати лише потрібні елементи без додавання класів.

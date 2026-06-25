@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       div :last-child{
+        color: red;
+       }
+       /*div p:first-line{*/
+       /* color: blue;*/
+       /*    font-size: 20px;*/
+       /*}*/
+       div p:last-of-type{
+           color: red;
+
+       }
+        ul li:nth-child( even){
+            color: cyan ;
+        }
+
+  </style>
+</head>
+<body>
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <span>Lorem.</span><span>Architecto.</span><span>Mollitia.</span><span>Est!</span>
+</div>
+
+<ul>
+    <li>Lorem ipsum dolor.</li>
+    <li>Assumenda libero, repellendus.</li>
+    <li>Eos, fugiat, voluptatum.</li>
+    <li>Aliquam, cumque, ut.</li>
+    <li>Praesentium, quis repellat.</li>
+    <li>Architecto, illum, praesentium.</li>
+    <li>Exercitationem, perspiciatis totam.</li>
+    <li>Consequuntur laboriosam, optio.</li>
+    <li>Eligendi magni, nemo?</li>
+    <li>Accusantium, maiores, soluta?</li>
+    <li>Alias, iste quam?</li>
+    <li>Error, nemo, similique.</li>
+    <li>Iusto natus, recusandae.</li>
+    <li>Autem ipsam, voluptates!</li>
+    <li>Aspernatur, provident, vitae.</li>
+</ul>
+
+</body>
+</html>
+
+[00:00:15] Псевдоклас дозволяє стилізувати елемент залежно від його стану (наприклад, :hover), а псевдоелемент — окрему частину елемента або додатковий вміст.
+[00:01:21] Псевдоклас :first-child використовується для стилізації першого дочірнього елемента всередині контейнера.
+[00:01:48] Псевдоелемент ::first-letter дає змогу змінювати стиль першої літери тексту (колір, розмір тощо).
+[00:02:16] Сучасний синтаксис використовує : для псевдокласів і :: для псевдоелементів, хоча раніше для обох застосовувалася одна двокрапка.
+[00:03:00] Псевдоелемент ::first-line стилізує лише перший рядок тексту, незалежно від зміни ширини вікна чи перенесення рядків.
+[00:04:24] Псевдоклас :last-child дозволяє вибрати останній дочірній елемент контейнера.
+[00:04:50] Псевдоклас :last-of-type застосовує стилі до останнього елемента певного типу (наприклад, останнього p серед інших елементів).
+[00:05:25] Основні псевдокласи для вибору елементів: :first-child, :last-child, :last-of-type.
+[00:05:36] Основні псевдоелементи для роботи з текстом: ::first-letter та ::first-line.
+[00:06:06] Псевдоклас :nth-child() дозволяє вибирати елементи за формулою: кожен другий, третій, десятий, парний або непарний.
+[00:06:59] Формула n у :nth-child() вибирає всі елементи, а 2n, 4n тощо — кожен другий, четвертий та інші кратні елементи.
+[00:07:28] Формат 2n+6 дозволяє стилізувати кожен другий елемент, починаючи з шостого.
+[00:07:42] Значення odd і even у :nth-child() використовуються для вибору непарних або парних елементів.
+[00:08:08] Псевдоклас :nth-last-child() працює аналогічно до :nth-child(), але відлік починається з кінця списку.
