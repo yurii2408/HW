@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: #b33434;
+            position: relative;
+            bottom: 40px;
+            /*top: px;*/
+            /*right: 100px;*/
+            /*left: 100px;*/
+            z-index: -1;
+
+        }
+    </style>
+</head>
+<body>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dicta doloremque enim odio perspiciatis placeat, tempore voluptas? Animi aut delectus deleniti dignissimos illo ipsa, maxime molestiae sunt tenetur, ullam voluptas.</p>
+
+<div class="item">
+
+
+</div>
+
+</body>
+</html>
+
+
+
+[00:00:00] Розпочато розгляд CSS-позиціонування. Існує п’ять типів позиціонування, а ця лекція присвячена position: relative.
+[00:00:47] За замовчуванням усі елементи мають position: static і відображаються у природному порядку HTML-документа.
+[00:01:16] При position: static недоступне керування нашаруванням елементів через z-index.
+[00:01:28] z-index визначає порядок відображення елементів по осі Z: більші значення розташовують елемент поверх інших, від’ємні — позаду.
+[00:02:52] position: relative підтримує z-index і дозволяє зміщувати елемент за допомогою властивостей top, bottom, left та right.
+[00:03:18] При position: relative елемент зміщується від своєї початкової позиції, але його місце в потоці документа залишається зарезервованим.
+[00:03:46] Властивість top зміщує елемент від верхньої межі: додатне значення переміщує вниз, від’ємне — вгору.
+[00:04:12] Зміщення елемента не впливає на розташування інших елементів — вони не пересуваються, а можуть накладатися один на одного.
+[00:04:25] Поєднання position: relative із z-index дозволяє керувати тим, який елемент буде поверх або позаду.
+[00:04:51] bottom працює аналогічно top, але відносно нижньої межі елемента.
+[00:05:17] Властивості left і right переміщують елемент по горизонталі; при цьому він може виходити за межі екрана.
+[00:05:45] На практиці position: relative найчастіше використовується разом з іншими типами позиціонування.

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: #b33434;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+    </style>
+</head>
+<body>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dicta doloremque enim odio perspiciatis placeat, tempore voluptas? Animi aut delectus deleniti dignissimos illo ipsa, maxime molestiae sunt tenetur, ullam voluptas.</p>
+
+<div class="item"></div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dicta doloremque enim odio perspiciatis placeat, tempore voluptas? Animi aut delectus deleniti dignissimos illo ipsa, maxime molestiae sunt tenetur, ullam voluptas.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dicta doloremque enim odio perspiciatis placeat, tempore voluptas? Animi aut delectus deleniti dignissimos illo ipsa, maxime molestiae sunt tenetur, ullam voluptas.</p>
+
+
+</body>
+</html>
+
+
+[00:00:00] position: absolute виводить елемент із нормального потоку документа, тому інші елементи займають його місце.
+[00:01:13] Положення абсолютно позиціонованого елемента задається через top, right, bottom, left, а порядок накладання — через z-index.
+[00:01:27] Властивості top: 0 і left: 0 дозволяють прикріпити елемент до верхнього лівого кута без відступів.
+[00:02:09] На відміну від position: relative, зміщення при position: absolute відбувається відносно меж контейнера, а не початкової позиції елемента.
+[00:02:37] За допомогою right і bottom можна розташувати елемент біля правого або нижнього краю контейнера, задаючи потрібні відступи.
+[00:02:52] На сторінці може бути будь-яка кількість елементів із position: absolute; вони не впливають на розташування інших елементів.
+[00:03:05] z-index працює і для абсолютно позиціонованих елементів, дозволяючи змінювати їхній порядок відображення.
+[00:03:32] Якщо батьківський елемент не має позиціонування, відмінного від static, то position: absolute орієнтується на body.
+[00:04:28] position: absolute можна уявити як «привид»: елемент ігнорує потік документа та може бути розміщений практично будь-де.
