@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            width: 200px;
+            height: 250px;
+            border: 2px solid;
+            overflow: scroll;
+
+        }
+        .header {
+            width: 100%;
+            height: 15%;
+            background-color: #b33434;
+            position:  sticky;
+            top: 0;
+            /*z-index: -1;*/
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="header">   </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis distinctio eum id in iusto quae quaerat repellat saepe ullam voluptates? Amet architecto, atque blanditiis delectus dignissimos dolores eos facere fugit incidunt inventore ipsum itaque necessitatibus, neque nesciunt omnis placeat quam quasi qui quia, quibusdam similique vero voluptatum. Delectus illo natus neque nulla quos reiciendis sapiente tempora voluptas. Amet aut cum debitis dolorem ducimus excepturi fugit quasi sit, sunt voluptatem. Accusantium, amet asperiores aspernatur consequatur dolores error, fugiat ipsum labore laudantium modi obcaecati quisquam sed tenetur ut veritatis. Cupiditate impedit incidunt ipsa quam? Obcaecati, provident, ratione. Aliquid odit similique sint tempore?
+            </p>
+
+
+  </div>
+</body>
+</html>
+
+[00:00:00] Створюється контейнер із заголовком (header) та великим обсягом тексту для демонстрації роботи позиціонування.
+[00:00:52] Властивість overflow: scroll додає прокручування, якщо вміст не поміщається в контейнер.
+[00:01:22] За замовчуванням заголовок прокручується разом із вмістом контейнера.
+[00:01:51] position: fixed фіксує елемент відносно всієї сторінки (body), тому не підходить для закріплення в межах окремого контейнера.
+[00:02:19] Для фіксації елемента всередині контейнера використовується position: sticky.
+[00:02:32] Щоб position: sticky працював, потрібно вказати позицію приклеювання, наприклад top: 0.
+[00:03:01] position: sticky підтримує властивості top, bottom, left, right і z-index, як і всі режими позиціонування, окрім static.
+[00:03:15] Використовуйте position: fixed для фіксації елемента на сторінці, а position: sticky — для закріплення елемента в межах окремого блоку чи секції.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+            .card{
+                width: 200px;
+                height: 250px;
+                background-color: #b33434;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .sale{
+                width: 75px;
+                height: 45px;
+                background-color: #b33434;
+                position: absolute;
+                top: -20px;
+                /*left: -25px;*/
+                border-radius: 20px 20px 0 0;
+            }
+        .sale-bottom{
+            width: 75px;
+            height: 45px;
+            background-color: #b33434;
+            position: absolute;
+            bottom: -20px;
+            /*left: -25px;*/
+            border-radius:0 0 20px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="sale"></div>
+
+    <p>Lorem ipsum dolor.</p>
+    <p>Lorem ipsum dolor.</p>
+    <p>Lorem ipsum dolor.</p>
+
+    <div class="sale-bottom"></div>
+</div>
+
+</body>
+</html>
+
+[00:00:00] position: relative і position: absolute часто використовують разом, щоб поєднати кілька елементів в один візуальний компонент (наприклад, картку товару та позначку «Sale»).
+[00:01:14] Створюється приклад: картка (card) і внутрішній елемент (sale), який потрібно винести за межі картки.
+[00:03:28] Батьківський елемент отримує position: relative, щоб стати точкою відліку для абсолютно позиціонованих дочірніх елементів.
+[00:03:56] Дочірній елемент із position: absolute позиціонується відносно найближчого предка з позиціонуванням, відмінним від static.
+[00:04:37] Властивості top і left дозволяють легко винести елемент за межі картки та розмістити його у потрібному місці.
+[00:05:20] Якщо батьківський елемент має position: static, то елемент з absolute позиціонується відносно body, а не картки.
+[00:05:46] Використання лише position: relative для позначки не підходить, оскільки елемент залишається в потоці документа та резервує під себе місце.
+[00:06:13] Комбінація relative + absolute дозволяє створювати незалежні картки з однаково розташованими позначками без конфліктів.
+[00:07:25] Абсолютно позиціонований елемент не впливає на розташування іншого контенту всередині картки — текст його ігнорує.
+[00:08:04] Усередині картки можна використовувати Flexbox для вирівнювання основного контенту, а елементи з absolute залишаються незалежними.
+[00:09:12] В одній картці може бути кілька елементів із position: absolute (наприклад, зверху і знизу), які не заважають один одному.
+[00:10:10] Накладання абсолютно позиціонованих елементів контролюється за допомогою z-index.
+[00:10:23] Практичне правило: контейнеру задають position: relative, а декоративним або допоміжним елементам — position: absolute, щоб картка залишалася в загальному потоці документа.
