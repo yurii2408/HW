@@ -1,84 +1,79 @@
-
 body{
-    background-color: lightgray;
-}
-.form-register{
-    margin: 100px auto;
-    width: 30vw;
-    height: 70vh;
-    /*background-color: #644C4C;*/
-}
-.login{
-    height: 63%;
-    /*background-color: #3F5EFB;*/
-    border: 1px solid grey;
-}
-.login, form{
-    /*background-color: #FF7143;*/
-    /*border: 5px solid green;*/
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
+
 }
-.login img{
-    width: 80%;
+img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    /*background-color: #3F5EFB;*/
 }
-input[type="text"],
-input[type="password"]{
-    width: 50%;
-    margin-top: 10px;
-}
-input[type="submit"]{
-    width: 50%;
-    height: 25px;
-    margin-top: 20px;
-    border-radius: 8px;
-    background-color: #68b5fa;
-    color: white;
-    border: none;
-}
-form span{
-    color: grey;
-}
-form p svg {
-    margin-bottom: -5px;
-}
-form p{
-    color: #155694;
-    /*margin: 15px 0;*/
-}
-form a{
-    color: #155694;
-    text-decoration: none;
-    /*margin-bottom: 15px;*/
-}
-.registration{
-    height: 40px;
-    border: 1px #FF7143;
-    margin-top: 3%;
-    /*width: 100%;*/
+.form-register{
+    margin: 10px auto;
+    gap: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-.registration a{
-    color: #68b5fa;
-    text-decoration: none;
-    font-weight: 600;
+p{
+    /*background-color: #3F5EFB;*/
+    margin-top: 2px;
 }
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.bottom-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 25px;
+    border: 1px solid #7F7A7A;
+    width: 200px;
+    height: 50px;
+}
+.bottom-form p{
+    font-size: 10px;
 
+}
+.form1{
+    border: 1px solid #7F7A7A   ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form1 p{
+    font-size: 10px;
+}
+.form1 a{
+    font-size: 10px;
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
+svg {
+    margin: -5px;
+    margin-right: 5px;
+}
+.form-register form input:nth-child(3){
+    background-color: #68b5fa;
+    border-radius: 5px;
+    border: none;
+    height: 21px;
+    width: 175px;
+    text-decoration-color: #E9E3DC;
+    color: #E9E3DC;
+    font-size: 10px;
+}
+input::placeholder {
+    font-size: 10px;
+}
