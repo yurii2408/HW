@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            display: flex;
+            /*align-items: center;*/
+            justify-content: space-around;
+            height: 50vh;
+            background-color: gray;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+        }
+        .item1{
+            align-self: flex-start;
+        }
+        .item2{
+            align-self: center;
+        }
+        .item3{
+            align-self: flex-end;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="box item1"></div>
+    <div class="box item2"></div>
+    <div class="box item3"></div>
+</div>
+
+</body>
+</html>
+
+- [00:00:00] Залишилося розглянути властивість `align-self`, яка дозволяє керувати положенням окремого елемента у flex-контейнері.
+- [00:00:24] Для демонстрації створюється flex-контейнер із кількома блоками, де кожен елемент має спільний і власний клас.
+- [00:01:09] Контейнер налаштовується як `display: flex`, елементи розташовуються горизонтально, задаються висота та фон для наочності.
+- [00:01:58] Без `align-items` усі елементи за замовчуванням розташовуються на початку поперечної осі.
+- [00:02:12] Властивість `align-self` застосовується до окремого елемента через його клас і перевизначає його вирівнювання.
+- [00:02:26] Значення `flex-start`, `center` і `flex-end` дозволяють розмістити окремий елемент відповідно на початку, по центру або в кінці контейнера.
+- [00:02:38] `align-self` використовується для індивідуального позиціонування кожного елемента незалежно від інших у flex-контейнері.
