@@ -1,0 +1,8 @@
+@media screen and (min-width: 376px) and ( max-width: 768px) {
+   .items {
+       width: 720px;
+   }
+    .item {
+        width: 218px;
+    }
+}

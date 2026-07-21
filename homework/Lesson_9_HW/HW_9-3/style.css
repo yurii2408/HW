@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+    grid-template-areas:
+    "header header "
+    "section1 spam1"
+    "section2 spam1"
+    "section2 spam2"
+    "section3 spam2"
+    "footer footer";
+
+}
+header{
+    grid-area: header;
+    background: #8D8484;
+}
+.section1{
+    grid-area: section1;
+    background: #776969;
+}
+.section2{
+    grid-area: section2;
+    background: #643030;
+}
+.section3{
+    grid-area: section3;
+    background: #441818;
+}
+.spam1{
+    grid-area: spam1;
+    background: #937575;
+}
+.spam2{
+    grid-area: spam2;
+    background: #644C4C;
+}
+footer{
+    grid-area: footer;
+    background: #BDBDBD;
+}
