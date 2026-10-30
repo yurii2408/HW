@@ -175,8 +175,28 @@
 
 
 //#iBvqtjEm
-let x='5';
-if(x===0 || x === null ||x===undefined || x===NaN || x==='' ){
-x= 'default';
+// let x='5';
+// if(x===0 || x === null ||x===undefined || x===NaN || x==='' ){
+// x= 'default';
+// }
+// console.log(x)
+
+//#awLXL6TBzg
+let coursesAndDurationArray = [
+
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
+for (let cours of coursesAndDurationArray) {
+    if (cours.monthDuration > 5) {
+        console.log("Super");
+    } else {
+        console.log("no");
+    }
 }
-console.log(x)
+
+
