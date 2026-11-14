@@ -92,17 +92,17 @@
 //     {name: 'max', age: 31, status: true}
 // ];
 // for (const user of users) {
-//
+//     //1
 //     if (user.status === true) {
 //         console.log("Status true:", user);
 //     }
 //
-//
+//     //2
 //     if (user.status === false) {
 //         console.log("Status false:", user);
 //     }
 //
-//
+//    //3
 //     if (user.age > 30) {
 //         console.log("Age > 30:", user);
 //     }
