@@ -1,3 +1,4 @@
+
 // #67kfznmiMl
 //
 // let mixArray = ["hello", 42, true, {name
@@ -182,21 +183,21 @@
 // console.log(x)
 
 //#awLXL6TBzg
-let coursesAndDurationArray = [
-
-    {title: 'JavaScript Complex', monthDuration: 5},
-    {title: 'Java Complex', monthDuration: 6},
-    {title: 'Python Complex', monthDuration: 6},
-    {title: 'QA Complex', monthDuration: 4},
-    {title: 'FullStack', monthDuration: 7},
-    {title: 'Frontend', monthDuration: 4}
-];
-for (let cours of coursesAndDurationArray) {
-    if (cours.monthDuration > 5) {
-        console.log("Super");
-    } else {
-        console.log("no");
-    }
-}
-
+// let coursesAndDurationArray = [
+//
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// for (let cours of coursesAndDurationArray) {
+//     if (cours.monthDuration > 5) {
+//         console.log("Super");
+//     } else {
+//         console.log("no");
+//     }
+// }
+//
 
